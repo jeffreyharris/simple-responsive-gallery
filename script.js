@@ -4,12 +4,9 @@ $('.galPhoto').hide();
 $('.galPhoto:first').show();
 	
 JEFF.simpleGallery = function($el){  
+	$('.galPhoto').hide();
 	$photo = $('#'+ $el.attr('target'));
-		
-	$('.galPhoto').hide( 0, function() {
-		$photo.show();
-	});
-		
+	$photo.fadeIn(500);	
 	$('html,body').animate({scrollTop: $photo.offset().top-10},'slow');
 }
 
