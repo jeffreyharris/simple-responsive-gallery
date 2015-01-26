@@ -10,9 +10,19 @@ JEFF.simpleGallery = function($el){
 	$('html,body').animate({scrollTop: $photo.offset().top-10},'slow');
 }
 
+JEFF.scrollThumb = function(){  
+	$thumbs = $('.galleryBox');
+	$('html,body').animate({scrollTop: $thumbs.offset().top-10},'slow');
+}
+
 $(document).ready(function() {
 	$('.singleItem').bind('click', function(e) { 
 		e.preventDefault();
 		JEFF.simpleGallery($(this));
+	});
+	
+	$('.thumbnailLink').bind('click', function(e) { 
+		e.preventDefault();
+		JEFF.scrollThumb();
 	});
 });
