@@ -1,10 +1,11 @@
-  jQuery(function(){
-	jQuery('.galPhoto').hide();
-	jQuery('.galPhoto:first').show();
-        jQuery('.singleItem').click(function(){  
-            jQuery('.galPhoto').hide();  
-			clickedStory = jQuery('#'+ jQuery(this).attr('target'))
+  $(function(){
+	$('.galPhoto').hide();
+	$('.galPhoto:first').show();
+        $('.singleItem').click(function(){  
+            $('.galPhoto').hide();  
+			clickedStory = $('#'+ $(this).attr('target'))
 			clickedStory.show();
-			jQuery('html,body').animate({scrollTop: clickedStory.offset().top-85},'slow');
+			$('html,body').animate({scrollTop: clickedStory.offset().top-10},'slow');
         });
 });
+
