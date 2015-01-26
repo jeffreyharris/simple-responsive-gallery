@@ -7,9 +7,9 @@
 	background-color:#eee;
 	display: inline-block;
 	margin-right:50px;
-    max-width:255px;
+    	max-width:255px;
 	padding:10px 0px 0px 10px;
-    vertical-align:top;	
+    	vertical-align:top;	
 }
 .galleryThumbs li {
 	display: inline-block;
@@ -17,21 +17,24 @@
 }
 .galleryPhotos{
 	background-color:#eee;
-    display: inline-block;
-	margin:0px auto 0px auto;
+    	display: inline-block;
+	margin:15px auto 0px auto;
 	max-width:280px;
 	padding:10px;	
 }
-
 @media screen and (max-width:650px){
 	.galleryThumbs {
 		background-color:#eee;
-		margin:0px 50px 0px 0px;
+		margin:0px;
 		text-align:center;
 		max-width:100%;
 		width:100%;
+		padding: 10px 0px 0px 0px;
 	}
 	.galleryPhotos{
+		padding:0px;
+	}
+	.galleryBox, .galleryPhotos{
 		max-width:100%;
 		width:100%;
 		text-align:center;
